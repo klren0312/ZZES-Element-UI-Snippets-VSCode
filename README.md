@@ -1,4 +1,4 @@
-## This is Code Snippets for Element UI.
+## This is Code Snippets of Element UI for VS Code.
 
 ### Install
 
