@@ -1,6 +1,4 @@
 {
-	//This is for Element UI 
-	//Version: 2.3.0
 	"Basic: Layout el-row": {
 		"prefix": "elrow",
 		"body": [
@@ -17,7 +15,7 @@
 		"prefix": "elcol",
 		"body": [
 			"<el-col :span=\"${1}\">${2}</el-col>",
-			"${3}",
+			"${3}"
 		],
 		"description": "Element UI <el-col>"
 	},
@@ -145,9 +143,9 @@
 		"prefix": "elrg",
 		"body": [
 			"<el-radio-group v-model=\"$1\">",
-    			"<el-radio v-for=\"${2:item} in ${3:items}\" :key=\"${2:item}.${4:key}\" :label=\"${2:item}.${5:label}\">",
-					"{{${2:item}.${6:title}}}",
-				"</el-radio>",
+    			"\t<el-radio v-for=\"${2:item} in ${3:items}\" :key=\"${2:item}.${4:key}\" :label=\"${2:item}.${5:label}\">",
+					"\t\t{{${2:item}.${6:title}}}",
+				"\t</el-radio>",
 			"</el-radio-group>",
 			"${7}"
 		],
@@ -167,7 +165,7 @@
 		"prefix": "elcg",
 		"body": [
 			"<el-checkbox-group v-model=\"$1\">",
-    			"<el-checkbox v-for=\"${2:item} in ${3:items}\" :key=\"${2:item}.${4:key}\" :label=\"${2:item}.${5:label}\"></el-checkbox>",
+    			"\t<el-checkbox v-for=\"${2:item} in ${3:items}\" :key=\"${2:item}.${4:key}\" :label=\"${2:item}.${5:label}\"></el-checkbox>",
 			"</el-checkbox-group>",
 			"${6}"
 		],
@@ -338,13 +336,13 @@
 		"prefix": "elf",
 		"body": [
 			"<el-form :model=\"${1:form}\" ref=\"${1:form}\" label-width=\"80px\">",
-				"<el-form-item label=\"$2\">",
-					"<el-input v-model=\"${1:form}.${3}\"></el-input>",
-				"</el-form-item>",
-				"<el-form-item>",
-					"<el-button type=\"primary\" @click=\"onSubmit\">${4:立即创建}</el-button>",
-					"<el-button>${5:取消}</el-button>",
-				"</el-form-item>",
+				"\t<el-form-item label=\"$2\">",
+					"\t\t<el-input v-model=\"${1:form}.${3}\"></el-input>",
+				"\t</el-form-item>",
+				"\t<el-form-item>",
+					"\t\t<el-button type=\"primary\" @click=\"onSubmit\">${4:立即创建}</el-button>",
+					"\t\t<el-button>${5:取消}</el-button>",
+				"\t</el-form-item>",
 			"</el-form>",
 			"${6}"
 		],
@@ -355,7 +353,7 @@
 		"prefix": "elfi",
 		"body": [
 			"<el-form-item label=\"$1\">",
-				"$2",
+				"\t$2",
 			"</el-form-item>",
 			"${3}"
 		],
@@ -464,7 +462,7 @@
 			"${4}"
 		],
 		"description": "Element UI loading options"
-	},
+	}
 
 	
 }

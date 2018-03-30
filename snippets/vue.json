@@ -67,9 +67,9 @@
 		"body": [
 			"this.$prompt('${1:内容}', '${2:标题}', {",
 				"\tconfirmButtonText: '${3:确定}',",
-				"cancelButtonText: '${4:取消}',",
-				"inputPattern: '${5}',",
-          		"inputErrorMessage: '${6}'",
+				"\tcancelButtonText: '${4:取消}',",
+				"\tinputPattern: '${5}',",
+          		"\tinputErrorMessage: '${6}'",
 				"\tcallback: action => {",
 				  "\t\t${7}",
 				"\t}",
@@ -77,5 +77,5 @@
 			"${8}"
 		],
 		"description": "Element UI $prompt"
-	},
+	}
 }
