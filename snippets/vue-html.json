@@ -462,7 +462,262 @@
 			"${4}"
 		],
 		"description": "Element UI loading options"
-	}
+	},
 
-	
+	"Navigation: NavMenu Menu": {
+		"prefix": "elmen",
+		"body": [
+			"<el-menu mode=\"${1:horizontal}\" :default-active=\"$2\" @select=\"$3\">",
+				"\t<el-submenu v-for=\"(${4:submenus}, ${5:index}) in ${6:menus}\"",
+					"\t\t:index=\"${5:index} + 1\"",
+					"\t\t:key=\"${4:submenus}.${5:key}\">",
+					"\t\t<template slot=\"title\">${4:submenus}.${6:title}</template>",
+					"\t\t<el-menu-item v-for=\"(${7:item}, ${8:subIndex}) in ${4:submenus}\"",
+						"\t\t\t:index=\"(${5:index} + 1) + '-' + (${8:subIndex} + 1)\">",
+							"\t\t\t\t{{${7:item}.${9:title}}}",
+					"\t\t</el-menu-item>",
+				"\t</el-submenu>",
+			"</el-menu>",
+			"${10}"
+		],
+		"description": "Element UI <el-menu> with <el-submenu> and <el-menu-item>"
+	},
+
+	"Navigation: NavMenu subMenu": {
+		"prefix": "elsubmen",
+		"body": [
+			"<el-submenu :index=\"$1\">",
+				"\t<template slot=\"title\">$2</template>",
+				"\t<el-menu-item v-for=\"(${3:item}, ${4:subIndex}) in $5\"",
+					"\t\t:index=\"${4:subIndex} + 1\"",
+					"\t\t:key=\"${5:item}.${6:key}\">>",
+						"\t\t\t{{${3:item}.$7}}",
+				"\t</el-menu-item>",
+			"</el-submenu>",
+			"${8}"
+		],
+		"description": "Element UI <el-submenu> with <el-menu-item>"
+	},
+
+	"Navigation: NavMenu Menu Item": {
+		"prefix": "elmeni",
+		"body": [
+			"<el-menu-item :index=\"$1\">$2</el-menu-item>",
+			"${3}"
+		],
+		"description": "Element UI <el-menu-item>"
+	},
+
+	"Navigation: Tabs": {
+		"prefix": "eltabs",
+		"body": [
+			"<el-tabs v-for=\"${1:item} in items\"",
+				"\t:key=\"${1:item}.${2:key}\"",
+				"\tv-model=\"$3\"",
+				"\ttype=\"${4:card}\">",
+				"\t<el-tab-pane :label=\"${1:item}.${5:label}\" :name=\"${1:item}.${6:id}\">",
+					"\t\t$7",
+				"\t</el-tab-pane>",
+			"</el-tabs>",
+			"${8}"
+		],
+		"description": "Element UI <el-tabs> with <el-tab-pane>"
+	},
+
+	"Navigation: Tabs tab pane": {
+		"prefix": "eltabp",
+		"body": [
+			"<el-tab-pane :label=\"$1\" :name=\"$2\">",
+				"\t$3",
+			"</el-tab-pane>",
+			"${4}"
+		],
+		"description": "Element UI <el-tab-pane>"
+	},
+
+	"Navigation: Breadcrumb": {
+		"prefix": "elbr",
+		"body": [
+			"<el-breadcrumb separator-class=\"${1:el-icon-arrow-right}\">",
+				"\t<el-breadcrumb-item :to=\"{ path: '$2', name: '$3' }\">$4</el-breadcrumb-item>",
+				"\t<el-breadcrumb-item :to=\"{ path: '$5', name: '$6' }\">$7</el-breadcrumb-item>",
+			"</el-breadcrumb>",
+			"${8}"
+		],
+		"description": "Element UI <el-breadcrumb>"
+	},
+
+	"Navigation: Breadcrumb Item": {
+		"prefix": "elbri",
+		"body": [
+			"<el-breadcrumb-item :to=\"{ path: '$1', name: '$2' }\">$3</el-breadcrumb-item>",
+			"${4}"
+		],
+		"description": "Element UI <el-breadcrumb-item>"
+	},
+
+	"Navigation: Dropdown": {
+		"prefix": "eldr",
+		"body": [
+			"<el-dropdown trigger=\"${1:click}\" @command=\"$2\">",
+				"\t<span>",
+					"\t\t<i class=\"el-icon-arrow-down el-icon--right\"></i>",
+				"\t</span>",
+				"\t<el-dropdown-menu slot=\"dropdown\">",
+					"\t\t<el-dropdown-item v-for=\"${3:item} in ${4:items}\"",
+						"\t\t\t:key=\"${3:item}.${5:key}\" :command=\"${3:item}.${6:command}\">",
+						"\t\t\t{{${3:item}.${7:title}}}",
+					"\t\t</el-dropdown-item>",
+				"\t</el-dropdown-menu>",
+			"</el-dropdown>",
+			"${8}"
+		],
+		"description": "Element UI <el-dropdown> with <el-dropdown-item>"
+	},
+
+	"Navigation: Dropdown Item": {
+		"prefix": "eldri",
+		"body": [
+			"<el-dropdown-item :command=\"$1\">$2</el-dropdown-item>",
+			"${3}"
+		],
+		"description": "Element UI <el-dropdown-item>"
+	},
+
+	"Navigation: Steps": {
+		"prefix": "elsts",
+		"body": [
+			"<el-steps :active=\"$1\">",
+				"\t<el-step v-for=\"${2:item} in ${3:items}\"",
+					"\t\t:key=\"${2:item}.${4:key}\"",
+					"\t\t:title=\"${2:item}.${5:title}\"",
+					"\t\t:description=\"${2:item}.${6:description}\"",
+					"\t\t:icon=\"${2:item}.${7:icon}\">",
+				"\t</el-step>",
+			"</el-steps>",
+			"${8}"
+		],
+		"description": "Element UI <el-steps> with <el-step>"
+	},
+
+	"Navigation: Steps Step": {
+		"prefix": "elst",
+		"body": [
+			"<el-step :title=\"$1\" :description=\"$2\" :icon=\"$3\"></el-step>",
+			"${4}"
+		],
+		"description": "Element UI <el-step>"
+	},
+
+	"Others: Dialog": {
+		"prefix": "eldi",
+		"body": [
+			"<el-dialog",
+				"\ttitle=\"$1\"",
+				"\t:visible.sync=\"$2\"",
+				"\twidth=\"${3:30%}\"",
+				"\t@close=\"$4\">",
+				"\t$5",
+				"\t<span slot=\"footer\">",
+					"\t\t<el-button @click=\"$2 = false\">取 消</el-button>",
+					"\t\t<el-button type=\"primary\" @click=\"$6\">确 定</el-button>",
+				"\t</span>",
+			"</el-dialog>",
+			"${7}"
+		],
+		"description": "Element UI <el-dialog>"
+	},
+
+	"Others: Tooltip": {
+		"prefix": "elto",
+		"body": [
+			"<el-tooltip content=\"$1\" placement=\"$2\" effect=\"${3:dark}\">",
+				"\t${4:<!-- content to trigger tooltip here -->}",
+			"</el-tooltip>",
+			"${5}"
+		],
+		"description": "Element UI <el-tooltip>"
+	},
+
+	"Others: Popover": {
+		"prefix": "elpop",
+		"body": [
+			"<el-popover",
+				"\t:ref=\"$1\"",
+				"\tplacement=\"$2\"",
+				"\t:title=\"$3\"",
+				"\twidth=\"$4\"",
+				"\ttrigger=\"${5:click}\"",
+				"\tcontent=\"$6\">",
+				"\t${7: <!-- <el-button slot=\"reference\">content</el-button> -->}",
+			"</el-popover>",
+			"${8}"
+		],
+		"description": "Element UI <el-popover>"
+	},
+
+	"Others: Card": {
+		"prefix": "elcard",
+		"body": [
+			"<el-card :body-style=\"${1:{ padding: '0px' }}\">",
+				"\t<div slot=\"header\">",
+					"\t\t<span>${2:<!-- card title -->}</span>",
+				"\t</div>",
+				"\t${3:<!-- card body -->}",
+			"</el-card>",
+			"${4}"
+		],
+		"description": "Element UI <el-card>"
+	},
+
+	"Others: Carousel": {
+		"prefix": "elcaro",
+		"body": [
+			"<el-carousel trigger=\"${1:hover}\" height=\"${2:150px}\">",
+				"\t<el-carousel-item v-for=\"${3:item} in ${4:items}\" :key=\"${3:item}.${5:key}\">",
+					"\t\t${6:<!-- content -->}",
+				"\t</el-carousel-item>",
+			"</el-carousel>",
+			"${7}"
+		],
+		"description": "Element UI <el-carousel> with <el-carousel-item>"
+	},
+
+	"Others: Carousel Item": {
+		"prefix": "elcaroi",
+		"body": [
+			"<el-carousel-item>",
+				"\t${1:<!-- content -->}",
+			"</el-carousel-item>",
+			"${2}"
+		],
+		"description": "Element UI <el-carousel-item>"
+	},
+
+	"Others: Collapse": {
+		"prefix": "elcolla",
+		"body": [
+			"<el-collapse v-model=\"${1:activeNames}\" :accordion=\"${2:false}\" @change=\"$3\">",
+				"\t<el-collapse-item v-for=\"${4:item} in ${5:items}\"",
+					"\t\t:key=\"${4:item}.${6:id}\"",
+					"\t\t:title=\"${4:item}.${7:title}\"",
+					"\t\t:name=\"${4:item}.${6:id}\">",
+					"\t\t${8:<!-- content -->}",
+				"\t</el-collapse-item>",
+			"</el-collapse>",
+			"${9}"
+		],
+		"description": "Element UI <el-collapse> with <el-collapse-item>"
+	},
+
+	"Others: Collapse Item": {
+		"prefix": "elcollai",
+		"body": [
+			"<el-collapse-item :title=\"$1\" :name=\"$2\">",
+				"${3:<!-- content -->}",
+			"</el-collapse-item>",
+			"${4}"
+		],
+		"description": "Element UI <el-collapse-item>"
+	}
 }

@@ -77,5 +77,20 @@
 			"${8}"
 		],
 		"description": "Element UI $prompt"
-	}
+	},
+
+	"Notice: Notification": {
+		"prefix": "elloads",
+		"body": [
+			"this.$notify({",
+				"\ttitle: '${1}',",
+				"\tmessage: '${2}',",
+				"\ttype: ${3:|info,success,warning,error|}",
+				"\tduration: ${4:|4500, 0|}",
+				"\tposition: ${5:|top-right,top-left,bottom-right,bottom-left|}",
+			"});",
+			"${6}"
+		],
+		"description": "Element UI $notify"
+	},
 }
