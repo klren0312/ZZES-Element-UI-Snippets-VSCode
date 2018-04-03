@@ -1,0 +1,38 @@
+{
+    "name": "element-ui-snippets",
+    "displayName": "Element UI Snippets",
+    "version": "0.1.0",
+    "publisher": "SS",
+    "description": "Markdown Word Count Example - reports out the number of words in a Markdown file.",
+    "author": {
+        "name": "Snowffer"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    
+    "galleryBanner": {
+        "color": "#C80000",
+        "theme": "dark"
+    },
+    "activationEvents": [
+        "onLanguage:vuejs"
+    ],
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "main": "./out/extension",
+    "devDependencies": {
+        "vscode": "0.10.x"
+    },
+    "license": "SEE LICENSE IN LICENSE.txt",
+    "bugs": {
+        "url": "https://github.com/snowffer/Element-UI-Snippets-VSCode/issues",
+        "email": "snowell@126.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/snowffer/Element-UI-Snippets-VSCode.git"
+    },
+    "homepage": "https://github.com/snowffer/Element-UI-Snippets-VSCode/blob/master/README.md"
+}
