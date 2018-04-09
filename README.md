@@ -101,9 +101,10 @@ No. |  Trigger Key | Element Tag
 |5. | `elmeal` | 	`this.$alert({})` |
 |6. | `elmecon` | 	`this.$confirm({})` |
 |7. | `elmepro` | 	`this.$prompt({})` |
+|8. | `elnoti` | 	`this.$notify({})` |
 
 
-<!--
+
 #### Navigation Part
 No. |  Trigger Key | Element Tag
 |:------:|:--------------:|:--------|
@@ -131,6 +132,7 @@ No. |  Trigger Key | Element Tag
 |7. | `elcolla` | `<el-collapse>` |
 |8. | `elcollai` | `<el-collapse-item>` |
 
+<!--
 #### General Part
 No. |  Trigger Key | Element Tag
 |:------:|:--------------:|:--------|

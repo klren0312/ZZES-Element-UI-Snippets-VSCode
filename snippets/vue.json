@@ -52,7 +52,7 @@
 			"this.$confirm('${1:内容}', '${2:标题}', {",
 				"\tconfirmButtonText: '${3:确定}',",
 				"\tcancelButtonText: '${4:取消}',",
-				"\ttype: '${5:|success,info,warning,erro|}'",
+				"\ttype: '${5:|success,info,warning,erro|}',",
 				"\tcallback: action => {",
 				  "\t\t${6}",
 				"\t}",
@@ -69,7 +69,7 @@
 				"\tconfirmButtonText: '${3:确定}',",
 				"\tcancelButtonText: '${4:取消}',",
 				"\tinputPattern: '${5}',",
-          		"\tinputErrorMessage: '${6}'",
+          		"\tinputErrorMessage: '${6}',",
 				"\tcallback: action => {",
 				  "\t\t${7}",
 				"\t}",
@@ -80,14 +80,14 @@
 	},
 
 	"Notice: Notification": {
-		"prefix": "elloads",
+		"prefix": "elnoti",
 		"body": [
 			"this.$notify({",
 				"\ttitle: '${1}',",
 				"\tmessage: '${2}',",
-				"\ttype: ${3:|info,success,warning,error|}",
-				"\tduration: ${4:|4500, 0|}",
-				"\tposition: ${5:|top-right,top-left,bottom-right,bottom-left|}",
+				"\ttype: '${3:|info,success,warning,error|}',",
+				"\tduration: '${4:|4500, 0|}',",
+				"\tposition: '${5:|top-right,top-left,bottom-right,bottom-left|}'",
 			"});",
 			"${6}"
 		],

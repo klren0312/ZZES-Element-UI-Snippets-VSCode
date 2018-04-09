@@ -1,18 +1,18 @@
 {
     "name": "element-ui-snippets",
     "displayName": "Element UI Snippets",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "SS",
-    "description": "Markdown Word Count Example - reports out the number of words in a Markdown file.",
+    "description": "Code snippets for Element-UI which is a Vue.js 2.0 UI Toolkit for Web",
     "author": {
         "name": "Snowffer"
     },
     "categories": [
         "Snippets"
     ],
-    
+    "icon": "assets/logo.png",
     "galleryBanner": {
-        "color": "#C80000",
+        "color": "#eff1f3",
         "theme": "dark"
     },
     "activationEvents": [
