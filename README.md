@@ -21,7 +21,7 @@ Go to the [git](https://github.com/snowffer/Element-UI-Snippets-VSCode) and down
 
 1. All the Element UI tags below, ignore the closure and more detailed information. Such as `elr` to `<el-radio>`, actually that represents `<el-radio v-model="${1}" label="${2}">$3</el-radio>`
 2. The sinppets' order follows the order of the components of Guide on Element UI official website basically. <!--Supply extra General and Options parts.-->
-3. Totally 75 snippets. Will add more if necessary.
+3. Totally 71 snippets. Will add more if necessary.
 4. **Only work in .vue file for now.**
 
 
@@ -46,7 +46,7 @@ Go to the [git](https://github.com/snowffer/Element-UI-Snippets-VSCode) and down
 
 #### Form Part
 
-No. |  Trigger Key | Element Tag
+|No. |  Trigger&nbsp;Key | Element Tag|
 |:------:|:--------------:|:--------|
 |1. | `elr` | `<el-radio>` |
 |2. | `elrg` | `<el-radio-group>` |
@@ -73,25 +73,21 @@ No. |  Trigger Key | Element Tag
 
 #### Data Part
 
-No. |  Trigger Key | Element Tag
+|No. |  Trigger Key | Element Tag|
 |:------:|:--------------:|:--------|
 |1. | `elta` | `<el-table>` |
 |2. | `eltac` | `<el-table-column>` |
 |3. | `eltag` | `<el-tag>` |
-|4. | `eltags` | `<el-tag type="success">` |
-|5. | `eltagi` | `<el-tag type="info">` |
-|6. | `eltagw` | `<el-tag type="warning">` |
-|7. | `eltagd` | `<el-tag type="danger">` |
-|8. | `elpr` | `<el-progress>` |
-|9. | `elprc` | `<el-progress type="circle">` |
-|10. | `eltree` | `<el-tree>` |
-|11. | `elpa` | `<el-pagination>` |
-|12. | `elba` | `<el-badge>` |
+|4. | `elpr` | `<el-progress>` |
+|5. | `elprc` | `<el-progress type="circle">` |
+|6. | `eltree` | `<el-tree>` |
+|7. | `elpa` | `<el-pagination>` |
+|8. | `elba` | `<el-badge>` |
 
 
 #### Notice Part
 
-No. |  Trigger Key | Element Tag
+|No. |  Trigger Key | Element Tag|
 |:------:|:--------------:|:--------|
 |1. | `elal` | `<el-alert>` |
 |2. | `elloads` | 	`element-loading-*` |

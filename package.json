@@ -1,7 +1,7 @@
 {
     "name": "element-ui-snippets",
     "displayName": "Element UI Snippets",
-    "version": "0.1.2",
+    "version": "0.2.5",
     "publisher": "SS",
     "description": "Code snippets for Element-UI which is a Vue.js 2.0 UI Toolkit for Web",
     "author": {
@@ -11,7 +11,10 @@
         "Snippets"
     ],
     "icon": "assets/logo.png",
-    
+    "galleryBanner": {
+        "color": "#549BFF",
+        "theme": "dark"
+    },
     "activationEvents": [
         "onLanguage:vuejs"
     ],
@@ -31,5 +34,22 @@
         "type": "git",
         "url": "https://github.com/snowffer/Element-UI-Snippets-VSCode.git"
     },
-    "homepage": "https://github.com/snowffer/Element-UI-Snippets-VSCode/blob/master/README.md"
+    "homepage": "https://github.com/snowffer/Element-UI-Snippets-VSCode/blob/master/README.md",
+    "contributes": {
+        "snippets": [
+          {
+            "language": "javascript",
+            "path": "./snippets/element-ui.json"
+          }, {
+            "language": "html",
+            "path": "./snippets/element-ui.json"
+          }, {
+            "language": "vue",
+            "path": "./snippets/element-ui.json"
+          }, {
+            "language": "vue-html",
+            "path": "./snippets/element-ui.json"
+          }
+        ]
+      }
 }
