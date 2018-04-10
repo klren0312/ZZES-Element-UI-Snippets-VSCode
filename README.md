@@ -44,6 +44,7 @@ Go to the [git](https://github.com/snowffer/Element-UI-Snippets-VSCode) and down
 |13. | `eltypo` | `font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;` |
 |14. | `elb` | `el-button` |
 
+
 #### Form Part
 
 |No. |  Trigger&nbsp;Key | Element Tag|
@@ -70,6 +71,7 @@ Go to the [git](https://github.com/snowffer/Element-UI-Snippets-VSCode) and down
 |20. | `eltr` | `<el-transfer>` |
 |21. | `elf` | `<el-form>` |
 |22. | `elfi` | `<el-form-item>` |
+
 
 #### Data Part
 
@@ -101,7 +103,7 @@ Go to the [git](https://github.com/snowffer/Element-UI-Snippets-VSCode) and down
 
 
 #### Navigation Part
-No. |  Trigger Key | Element Tag
+|No. |  Trigger Key | Element Tag|
 |:------:|:--------------:|:--------|
 |1. | `elmen` | `<el-menu>` |
 |2. | `elsubmen` | `<el-submenu>` |
@@ -116,7 +118,7 @@ No. |  Trigger Key | Element Tag
 |11. | `elst` | `<el-step>` |
 
 #### Others Part
-No. |  Trigger Key | Element Tag
+|No. |  Trigger Key | Element Tag|
 |:------:|:--------------:|:--------|
 |1. | `eldi` | `<el-dialog>` |
 |2. | `elto` | `<el-tooltip>` |
