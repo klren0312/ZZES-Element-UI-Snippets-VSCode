@@ -3,17 +3,16 @@
 ### Install
 
 #### Manual Install
-Copy the files in folder sinppets to the path directly:
+Go to the [git](https://github.com/snowffer/Element-UI-Snippets-VSCode) and download the snippets folder, then copy the files in the folder to the path directly:
 
 + **Mac**: /Users/*< your-user-name >*/Library/Application Support/Code/User/snippets/
 + **Windows**: *< your-installed-driver >* :\Users\ *< your-user-name >* \AppData\Roaming\Code\User\snippets\
 
 #### Through VS Code Extensions
-*TBD*
 
-<!--
++ From website: Go to Visual Studio Code [Marketplace](https://marketplace.visualstudio.com/vscode), and search 'Element UI Snippets', then click the install button.
++ From VS Code: click extensions sidebar, and search 'Element UI Snippets', then click the install button.
 
--->
 ### Special Instruction：
 
 1. For the components like `el-table` which need children components to be its content, use `v-for` to loop to generate the children components.
@@ -22,8 +21,8 @@ Copy the files in folder sinppets to the path directly:
 
 1. All the Element UI tags below, ignore the closure and more detailed information. Such as `elr` to `<el-radio>`, actually that represents `<el-radio v-model="${1}" label="${2}">$3</el-radio>`
 2. The sinppets' order follows the order of the components of Guide on Element UI official website basically. <!--Supply extra General and Options parts.-->
-3. Totally 55 snippets. Others will be implemented in the future. 
-4. **Only work in .vue file.**
+3. Totally 75 snippets. Will add more if necessary.
+4. **Only work in .vue file for now.**
 
 
 

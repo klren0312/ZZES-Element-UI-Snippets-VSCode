@@ -1,7 +1,7 @@
 {
     "name": "element-ui-snippets",
     "displayName": "Element UI Snippets",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "publisher": "SS",
     "description": "Code snippets for Element-UI which is a Vue.js 2.0 UI Toolkit for Web",
     "author": {
@@ -11,10 +11,7 @@
         "Snippets"
     ],
     "icon": "assets/logo.png",
-    "galleryBanner": {
-        "color": "#eff1f3",
-        "theme": "dark"
-    },
+    
     "activationEvents": [
         "onLanguage:vuejs"
     ],
