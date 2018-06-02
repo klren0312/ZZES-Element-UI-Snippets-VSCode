@@ -606,11 +606,12 @@
 	"Navigation: Tabs": {
 		"prefix": "eltabs",
 		"body": [
-			"<el-tabs v-for=\"${1:item} in items\"",
-				"\t:key=\"${1:item}.${2:key}\"",
-				"\tv-model=\"$3\"",
-				"\ttype=\"${4:card}\">",
-				"\t<el-tab-pane :label=\"${1:item}.${5:label}\" :name=\"${1:item}.${6:id}\">",
+			"<el-tabs v-model=\"$1\"",
+				"\ttype=\"${2:card}\">",
+				"\t<el-tab-pane v-for=\"${3:item} in items\"",
+					"\t\t:key=\"${3:item}.${4:key}\"",
+					"\t\t:label = \"${3:item}.${5:label}\"",
+					"\t\t:name=\"${3:item}.${6:id}\">",
 					"\t\t$7",
 				"\t</el-tab-pane>",
 			"</el-tabs>",
