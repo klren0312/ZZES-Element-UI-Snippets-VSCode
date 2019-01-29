@@ -226,9 +226,9 @@
 	"Form: Cascader": {
 		"prefix": "elca",
 		"body": [
-			"<el-cascader :options=\"${1:options}\" v-model=\"${2:selectedOptions}\" @change=\"${2:handleChange}\">",
+			"<el-cascader :options=\"${1:options}\" v-model=\"${2:selectedOptions}\" @change=\"${3:handleChange}\">",
 			"</el-cascader>",
-			"${3}"
+			"${4}"
 		],
 		"description": "Element UI <el-cascader>"
 	},
