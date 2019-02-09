@@ -1,7 +1,7 @@
 {
     "name": "element-ui-snippets",
     "displayName": "Element UI Snippets",
-    "version": "0.2.7",
+    "version": "0.2.8",
     "publisher": "SS",
     "description": "Code snippets for Element-UI which is a Vue.js 2.0 UI Toolkit for Web",
     "author": {
@@ -25,7 +25,7 @@
     "devDependencies": {
         "vscode": "0.10.x"
     },
-    "license": "SEE LICENSE IN LICENSE.txt",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/snowffer/Element-UI-Snippets-VSCode/issues",
         "email": "snowell@126.com"
