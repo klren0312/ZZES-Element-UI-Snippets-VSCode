@@ -124,7 +124,7 @@
 	"Basic: el-button": {
 		"prefix": "elb",
 		"body": [
-			"<el-button type=\"${1:text}\" @click=\"$2\"></el-button>",
+			"<el-button type=\"${1|primary,text,info,success,warning,danger|}\" @click=\"$2\"></el-button>",
 			"${3}"
 		],
 		"description": "Element UI <el-button>"
@@ -363,7 +363,7 @@
 	"Data: Table": {
 		"prefix": "elta",
 		"body": [
-			"<el-table :data=\"$1\">",
+			"<el-table :data=\"$1\" border stripe>",
 				"\t<el-table-column v-for=\"${2:col} in ${3:columns}\"",
 					"\t\t:prop=\"${2:col}.${4:id}\"",
 					"\t\t:key=\"${2:col}.${4:id}\"",
