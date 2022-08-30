@@ -6,8 +6,7 @@
 				"\tmessage: '$1',",
 				"\ttype: '${2|info,success,warning,error|}',",
 				"\tshowClose: ${3:true},",
-			"});",
-			"${4}"
+			"})"
 		],
 		"description": "Element UI $message"
 	},
@@ -25,9 +24,8 @@
 					"\t\t${5}",
 				"\t}).then(action => {",
 					"\t\t${6}",
-				"\t});",
-			"});",
-			"${7}"
+				"\t})",
+			"})"
 		],
 		"description": "Element UI $msgbox"
 	},
@@ -40,8 +38,7 @@
 				"\tcallback: action => {",
 				  "\t\t${4}",
 				"\t}",
-			"});",
-			"${5}"
+			"})"
 		],
 		"description": "Element UI $alert"
 	},
@@ -56,8 +53,7 @@
 				"\tcallback: action => {",
 				  "\t\t${6}",
 				"\t}",
-			"});",
-			"${7}"
+			"})"
 		],
 		"description": "Element UI $confirm"
 	},
@@ -73,8 +69,7 @@
 				"\tcallback: action => {",
 				  "\t\t${7}",
 				"\t}",
-			"});",
-			"${8}"
+			"})"
 		],
 		"description": "Element UI $prompt"
 	},
@@ -88,9 +83,8 @@
 				"\ttype: '${3:|info,success,warning,error|}',",
 				"\tduration: '${4:|4500, 0|}',",
 				"\tposition: '${5:|top-right,top-left,bottom-right,bottom-left|}'",
-			"});",
-			"${6}"
+			"})"
 		],
 		"description": "Element UI $notify"
-	},
+	}
 }
