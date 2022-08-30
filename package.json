@@ -21,7 +21,7 @@
   "engines": {
     "vscode": "^1.0.0"
   },
-  "main": "./out/extension",
+  "main": "./src/extension.js",
   "devDependencies": {
     "vscode": "0.10.x"
   },

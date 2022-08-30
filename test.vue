@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    <el-empty description=""></el-empty>
+  </div>
 </template>
 <script>
 export default {
